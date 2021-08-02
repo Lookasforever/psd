@@ -1,77 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/adfa85df3c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+
     <header class="menu-bar">
         <div class="container">
             <div class="row">
-                <div class="col-xl-2">
-                    <img src="img/logo.png" width="270" height="100" alt="My Landing" class="logo">
-                </div>
-                <div class="col-xl-8 align-self-center">
-                    <nav>
-                        <ul class="menu d-flex justify-content-end">
-                            <li class="menu__item"><a href="#">Главная</a></li>
-                            <li class="menu__item"><a href="#">Обо мне</a></li>
-                            <li class="menu__item"><a href="#">Сервис</a></li>
-                            <li class="menu__item"><a href="#">Портфолио</a></li>
-                            <li class="menu__item"><a href="#">Блог</a></li>
-                            <li class="menu__item"><a href="#">Контакты</a></li>
-                            <li class="menu__item"><i class="fas fa-search"></i></li>
-                        </ul>
-                    </nav>
+                <div class="col-xl-0">
+                    <div class="text">
+                        <p class="anim">Путешествия это</p>
+                        <p class="anim__1">
+                            <span class="word wisteria">интересно.</span>
+                            <span class="word belize">захватывающе.</span>
+                            <span class="word pomegranate">познавательно.</span>
+                            <span class="word green">круто.</span>
+                            <span class="word midnight">невероятно.</span>
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="col-xl-12 align-self-center">
+                <nav>
+                    <ul class="menu d-flex justify-content-center">
+                        <li class="menu__item"><a href="#main_id">Главная</a></li>
+                        <li class="menu__item"><a href="#about_id">Обо мне</a></li>
+                        <li class="menu__item"><a href="#dates_id">Даты и цены</a></li>
+                        <li class="menu__item"><a href="#photo_id">Фотографии</a></li>
+                        <li class="menu__item"><a href="#footer_id">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         </div>
     </header>
-    <header class="header">
+
+    <header class="header" id="main_id">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <h1 class="header__title">Проект про путешествия</h1>
+                    <h1 class="header__title">Проект о путешествиях</h1>
                     <p class="header__text">Мой личный блог о путешествиях в Крыму и не только</p>
-                    <button class="button button_empty">Фото</button>
-                    <button class="button button_full">Маршруты</button>
+                    <button class="button" onclick="window.location.href = '#photo_id'">Фото</button>
+                    <button class=" button" onclick="window.location.href = '#dates_id'">Маршруты</button>
                 </div>
             </div>
         </div>
     </header>
-    <section class="about">
+
+    <section class="about" id="about_id">
         <div class="container">
             <div class="row">
-               <div class="col-xl-1">
-                   <h2 class="about__title">Обо мне</h2>
-                   <p class="ap1">Меня зовут Андрей и я с детства люблю путешествовать.
-                       Меня привлекают любые виды пешего туризма и отдыха на природе.
-                   </p>
-               </div>           
+                <div class="col-xl-6 about__1"><img src="img/me.png" width="500" height="747" alt="My Landing"
+                        class="me"></div>
+                <div class="col-xl-6">
+                    <h2 class="about__2">Обо мне</h2>
+                    <p class="about__3">Меня зовут Андрей. Я родился и вырос на Южном берегу Крыма. С детства я любил
+                        пешие походы на вершины Крымских гор и теперь хочу показать
+                        красоты Крымского полуострова Вам!
+                    </p>
+                </div>
             </div>
-            <div class="row">
-               <div class="col-xl-3">
-                <i class="fas fa-mountain"></i>
-                   <h3>Восхождения в горы</h3>
-                   <p class="mount">Больше всего мне нравится взбираться на вершины
-                       горного Крыма. Наиболее красивые виды находятся на Южном берегу.
-                   </p>
-               </div>
-               <div class="col-xl-3">
-                <i class="fas fa-water"></i>
-                   <h3>Отдых у моря</h3>
-                   <p class="mount">Помимо подъемов в горы люблю отдыхать у моря.</p>
-               </div>       
-            </div>
-        </div> 
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <section class="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 justify-content-center">
+                    <h2 class="about__title">Мои услуги</h2>
+                    <p class="about__text">Я хочу стать для Вас проводником в мир Крымских гор.
+                        Помимо сопровождения на Крымские вершины я могу предложить Вам следующие услуги в путешествии.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4">
+                    <div class="our_card1">
+                        <img src="img/route.png" width="60" height="60">
+                        <h3 class="service__title">Разработка маршрута</h3>
+                        <p class="service__text">Под каждого человека я разрабатываю
+                            собственный маршрут в зависимости от его пожеланий и физических
+                            возможностей, чтоб клиент остался максимально доволен путешествием.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="our_card2">
+                        <img src="img/camera.png" width="60" height="60">
+                        <h3 class="service__title">Выбор мест для селфи</h3>
+                        <p class="service__text">Исходя из Ваших пожеланий маршрут может проходить через
+                            наиболее красочные смотровые площадки чтобы вы могли сделать потрясающие снимки
+                            для социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="our_card3">
+                        <img src="img/history.png" width="60" height="60" class="card3">
+                        <h3 class="service__title">Исторический экскурс</h3>
+                        <p class="service__text">На каждом маршурте есть интересные места, обладающие длинной
+                            историей. В ходе путешествия я буду рассказывать и показывать их, а также смогу
+                            ответить на интересующие вас вопросы.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="photo_id">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 justify-content-center">
+                    <h2 class="about__title">Фотографии</h2>
+                    <p class="about__text">Здесь вы можете посмотреть наиболее красивые фотографии горных вершин
+                        Крымского полуострова,
+                        разделенные по территориальному признаку.
+                    </p>
+                    <button val="on" class="button1" filter="all">Все фото</button>
+                    <button val="off" class="button1" filter="bear">Медведь гора</button>
+                    <button val="off" class="button1" filter="ekliz">Чатыр-Даг</button>
+                    <button val="off" class="button1" filter="dolina">Демерджи</button>
+                </div>
+            </div>
+            <div class="row filter">
+                <div filter="bear" class="col-xl-4"><a data-fancybox="gallery" data-src="img/bear/item1.jfif"
+                        data-caption="">
+                        <img class="ph" src="img/bear//item1_prev.png" width="400" height="400" />
+                    </a></div>
+                <div filter="bear" class="col-xl-4">
+                    <a data-fancybox="gallery" data-src="img/bear/item2.jpg">
+                        <img class="ph" src="img/bear/item2_prev.png" width="400" height="400" />
+                    </a>
+                </div>
+                <div filter="bear" class="col-xl-4"><a data-fancybox="gallery" data-src="img/bear/item3.jpg">
+                        <img class="ph" src="img/bear/item3_prev.png" width="400" height="400" />
+                    </a> </div>
+                <div filter="bear" class="col-xl-4"><a data-fancybox="gallery" data-src="img/bear/item4.jpg">
+                        <img class="ph" src="img/bear/item4_prev.png" width="400" height="400" />
+                    </a> </div>
 
 
+
+                <div filter="ekliz" class="col-xl-4"><a data-fancybox="gallery" data-src="img/ekliz/item1.jpg">
+                        <img class="ph" src="img/ekliz/item1_prev.png" width="400" height="400" />
+                    </a> </div>
+                <div filter="ekliz" class="col-xl-4"><a data-fancybox="gallery" data-src="img/ekliz/item2.jpg">
+                        <img class="ph" src="img/ekliz/item2_prev.png" width="400" height="400" />
+                    </a> </div>
+                <div filter="ekliz" class="col-xl-4"><a data-fancybox="gallery" data-src="img/ekliz/item3.jpg">
+                        <img class="ph" src="img/ekliz/item3_prev.png" width="400" height="400" />
+                    </a> </div>
+                <div filter="ekliz" class="col-xl-4"><a data-fancybox="gallery" data-src="img/ekliz/item4.jpg">
+                        <img class="ph" src="img/ekliz/item4_prev.png" width="400" height="400" />
+                    </a> </div>
+
+                <div filter="dolina" class="col-xl-4"><a data-fancybox="gallery" data-src="img/dolina/item1.jfif">
+                        <img class="ph" src="img/dolina/item1_prev.png" width="400" height="400" />
+                    </a> </div>
+                <div filter="dolina" class="col-xl-4"><a data-fancybox="gallery" data-src="img//dolina/item2.jpg">
+                        <img class="ph" src="img/dolina/item2_prev.png" width="400" height="400" />
+                    </a> </div>
+                <div filter="dolina" class="col-xl-4"><a data-fancybox="gallery" data-src="img/dolina/item3.jfif">
+                        <img class="ph" src="img/dolina/item3_prev.png" width="400" height="400" />
+                    </a> </div>
+                <div filter="dolina" class="col-xl-4"><a data-fancybox="gallery" data-src="img/dolina/item4.jpg">
+                        <img class="ph" src="img/dolina/item4_prev.png" width="400" height="400" />
+                    </a> </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="dates_id">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 justify-content-center">
+                    <h2 class="about__title">Даты и цены</h2>
+                    <p class="about__text">На данный момент доступны три вершины для посещения, а именно - Аю-Даг (575
+                        м), Эклизи-Бурун (1527 м) и Южная Демерджи (1171 м).
+                        Со свободными датами и тарифами можно ознакомиться ниже.
+                    </p>
+                </div>
+                <div class="col-xl-4 justify-content-around">
+                    <div class="price pr1">
+                        <div class="price__head">
+                            <p>Аю-Даг</p>
+                            <sup>₽</sup> 500 <sub>с человека</sub>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>Сложность: <img src="img/hard2.png" class="hard">
+                                </li>
+                                <li>Дата: договорная</li>
+                                <li>Места: в наличии</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button onclick="window.location.href = '#win1'">
+                                Подробнее...
+                            </button>
+                            <!-- Модальное окно №1 -->
+                            <a href="#x" class="overlay" id="win1"></a>
+                            <div class="popup">
+                                <img src="img/bear/item2.jpg" alt="" width="800px" height="500px">
+                                <br>
+                                <br>
+                                Аю-Даг — гора на Южном берегу Крыма, расположенная на границе Большой Алушты и Большой
+                                Ялты. Она похожа на огромного медведя, склонённого к морю. И все легенды о Медведь-горе
+                                связаны с этим животным. Высота горы — 570,8 м над уровнем моря, горный массив слегка
+                                вытянут в северо-западном направлении на 2400 метров, выступает в море на 2—2,5
+                                километра. Общая площадь — около 4 квадратных километров. Комплекс Аю-Даг является
+                                природоохранным объектом.
+                                Вершина и склоны Аю-Дага покрыты шибляковым лесом со вкраплениями небольших рощ сосны
+                                крымской. Основными лесообразующими породами шибляка являются дуб пушистый и скальный,
+                                граб восточный, ясень высокий, рябина обыкновенная и берека, груша лохолистная, клён
+                                полевой, кизил обыкновенный, держидерево, шиповник обыкновенный. Встречаются реликтовые
+                                растения: земляничник мелкоплодный, можжевельник высокий и колючий, фисташка
+                                туполистная, иглица понтийская, жасмин кустарниковый, ладанник крымский и другие. Всего
+                                во флоре заповедника Аю-Даг учтено 577 видов растений, из них 44 вида занесены в Красную
+                                книгу.
+
+                                В числе животных, обитающих на Аю-Даге, встречаются лисы, барсуки, каменные куницы, ежи,
+                                зайцы-русаки, белки, мелкие грызуны, летучие мыши и другие виды млекопитающих. На утесах
+                                Аю-Дага гнездятся чайки, реже — бакланы, в лесу — горлицы, совы, дятлы, синицы, воробьи,
+                                сойки, дрозды и прочие виды птиц. Из пресмыкающихся здесь водятся ужи, полозы, ящерицы,
+                                в том числе и безногая — желтопузик. 16 видов животных, обитающих в Аю-Даге занесены в
+                                Красную книгу. С 1974 года Аю-Даг является государственным заказником республиканского
+                                значения.
+                                <br><br><br><br>
+                                По поводу даты и количества путешественников договариваться по телефону или в социальных
+                                сетях.
+                                <a class="close" title="Закрыть" href="#close"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 justify-content-around">
+                    <div class="price pr2">
+                        <div class="price__head">
+                            <p>Чатыр-Даг</p>
+                            <sup>₽</sup> 1000 <sub>с человека</sub>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>Сложность: <img src="img/hard4.png" class="hard"></li>
+                                <li>Дата: договорная</li>
+                                <li>Места: в наличии</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button onclick="window.location.href = '#win2'">
+                                Подробнее...
+                            </button>
+                            <!-- Модальное окно №1 -->
+                            <a href="#x" class="overlay" id="win2"></a>
+                            <div class="popup">
+                                <img src="img/ekliz/item2.jpg" alt="" width="800px" height="500px">
+                                <br>
+                                <br>
+                                Чатыр-Да́г — горный массив (яйла), расположенный в южной части Крымского полуострова, в
+                                10 км от моря, пятый по высоте в Крыму. Чатыр-Даг отождествляется с упоминаемой у
+                                Страбона горой Трапезунт.
+                                Принадлежит к Главной гряде Крымских гор. Ранее не был так отдалён от основной гряды,
+                                выделился в результате эрозии от Бабугана реками Улу-Узень и Альма, от Демерджи и
+                                Долгоруковской яйлы рекой Ангара. Состоит из нижнего и верхнего плато (яйлы). На верхнем
+                                плато расположены две вершины: восточная — Ангар-Бурун (1453 м) и западная —
+                                Эклизи-Бурун (1527 м). Длина плоскогорья с севера на юг — 10 километров, ширина с запада
+                                на восток — около 4 километров.
+                                Массив представляет собой классический карстовый район: имеется более 200 пещер, шахт,
+                                полостей. Занимает первое место среди других яйл по плотности расположения карстовых
+                                воронок, которых здесь более 1 000. По составу горных пород он делится на два
+                                структурных этажа. Верхний сложен известняками, образовавшимися из отложений тёплых
+                                морей верхнего юрского периода, и подстилающими их красно-бурыми конгломератами.
+                                Мощность этих известняков достигает 1000 метров. Конгломераты в свою очередь лежат на
+                                водоупорной толще нижнего этажа — отложениях верхнетриасового и нижнеюрского возраста.
+                                Она известна под именем таврической серии и состоит из ритмично чередующихся зеленоватых
+                                и чёрных аргиллитов, алевролитов и песчаников. Эти породы довольно широко распространены
+                                по всему южному и юго-западному побережью Крыма.
+                                Люди жили на Чатыр-Даге ещё в эпоху неолита. К тому времени относится стоянка на
+                                Барсучьей поляне. В гротах Чатыр-Дага жили скотоводы, охотники (V в до н. э.).
+                                Как верхнее, так и нижнее плато Чатыр-Дага являются популярными туристическими объектами
+                                благодаря довольно лёгкой достижимости с Ангарского перевала. Нижнее плато изобилует
+                                пещерами, из которых оборудованы и являются популярными экскурсионными объектами
+                                следующие: Мраморная, Эмине-Баир-Хосар и Эмине-Баир-Коба. Кроме того, на нижнем плато
+                                располагаются известные «дикие» пещеры Суук-Коба и Бин-Баш-Коба.
+
+                                <br><br><br><br>
+                                По поводу даты и количества путешественников договариваться по телефону или в социальных
+                                сетях.
+                                <a class="close" title="Закрыть" href="#close"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 justify-content-around">
+                    <div class="price pr3">
+                        <div class="price__head">
+                            <p>Демерджи</p>
+                            <sup>₽</sup> 1000 <sub>с человека</sub>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>Сложность: <img src="img/hard3.png" class="hard"></li>
+                                <li>Дата: договорная</li>
+                                <li>Места: в наличии</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button onclick="window.location.href = '#win3'">
+                                Подробнее...
+                            </button>
+                            <!-- Модальное окно №1 -->
+                            <a href="#x" class="overlay" id="win3"></a>
+                            <div class="popup">
+                                <img src="img/dolina/item2.jpg" alt="" width="800px" height="500px">
+                                <br>
+                                <br>
+                                Демерджи́-яйла́ (крымскотат. Demirci yayla) — горный массив (яйла) Главной гряды
+                                Крымских гор в Алуштинском регионе Крыма.
+                                Название «Демерджи» (крымскотат. demirci) в переводе с крымскотатарского означает
+                                «кузнец». В Средние века греки называли гору Фуна — «дымящаяся». Это название осталось
+                                за крепостью у подножия горы. В 1787 году здесь останавливался кортеж Екатерины в
+                                знаменитом Крымском турне великой императрицы.
+
+                                Демерджи-яйла принадлежит к Главной гряде Крымских гор. Расположена южнее Долгоруковской
+                                яйлы (она же Субаткан-яйла), недалеко от города Алушта. У подножия горы расположено село
+                                Лучистое, ранее также называвшееся Демерджи и переименованное в 1945 году после
+                                депортации крымских татар. Вершины — Северная Демерджи (1356 м) и Южная Демерджи (1239
+                                м).
+                                В отличие от других крымских яйл, Демерджи сложена не только из известняка, а имеет
+                                многочисленные вкрапления гальки и валунов твёрдых пород, схваченные известняковым
+                                «цементом». Вода просачивается с поверхности в глубь породы, реагирует с углекислым
+                                газом, который содержится в почве, и приобретает свойства слабой кислоты, которая
+                                разъедает породу. Под влиянием такой воды и выветривания известняк разрушается, оставляя
+                                «скульптуры» из самых твёрдых пород. Это «пальцы» — колонны, «грибы» — колонны с
+                                «крышками» и многое другое. Самая большая из них пятиметровой ширины и высотой почти 25
+                                метров.
+
+                                Наиболее известное место их скопления — «Долина привидений». Когда по Демерджи ползут
+                                облака, время от времени взору открываются загадочные силуэты, которые через мгновения
+                                исчезают.
+
+                                На склонах Южной Демерджи располагаются причудливые нагромождения из выходов горных
+                                пород — Долина привидений. Также здесь находится скала Хой-Кая, названная российскими
+                                переселенцами Голова Екатерины, хорошо различимая с трассы Симферополь — Ялта.
+                                <br><br><br><br>
+                                По поводу даты и количества путешественников договариваться по телефону или в социальных
+                                сетях.
+                                <a class="close" title="Закрыть" href="#close"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer" id="footer_id">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h2 class="footer__title">Контакты</h2>
+                    <p class="footer__text">Если вы решили пойти в путешествие по одному из предоставленых
+                        маршрутов, то свяжитесь со мной в социальных сетях или оставьте заявку в форме ниже и я Вам
+                        обязательно перезвоню.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="col-xl-3">
+                    <div class="circle"><i class="fab fa-viber"></i></div>
+                    <p>89782395957</p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="circle"><i class="fas fa-phone fa-rotate-90"></i></div>
+                    <p>+7 (978) 239 59 57</p>
+                    <p>+7 (978) 147 25 43</p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="circle"><i class="fas fa-envelope"></i></div>
+                    <p>lookasdwayne@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center form1">
+                <div class="col-xl-5"><input type="text" placeholder="Ваше имя"></div>
+                <div class="col-xl-5"> <input type="phone" placeholder="Номер телефона"></div>
+                <div class="col-xl-3 offset-xl-7"> <button>Отправить заявку</button></div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    
+    <div class="down">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12 down1">All rights reserved. © 2021</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="head_anim.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </body>
+
 </html>
